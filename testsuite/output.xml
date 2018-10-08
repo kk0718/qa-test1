@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.7.0 on win32)" generated="20181007 10:03:06.166">
+<suite id="s1" name="Test" source="C:\Users\krina\Downloads\qa-test\qa-test\testsuite\test.robot">
+<test id="s1-t1" name="Verify User Should Be Able to Create Task">
+<kw name="Open Web Application" library="ResourceKeywords" type="setup">
+<arguments>
+<arg>${AppUrl}</arg>
+<arg>${FfWebBrowser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${webUrl}</arg>
+<arg>browser=${browserName}</arg>
+</arguments>
+<msg timestamp="20181007 10:03:06.328" level="INFO">Opening browser 'firefox' to base url 'https://qa-test.avenuecode.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181007 10:03:06.336" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181007 10:03:06.336" endtime="20181007 10:03:06.336"></status>
+</kw>
+<msg timestamp="20181007 10:03:06.336" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20181007 10:03:06.328" endtime="20181007 10:03:06.336"></status>
+</kw>
+<status status="FAIL" starttime="20181007 10:03:06.328" endtime="20181007 10:03:06.340"></status>
+</kw>
+<kw name="Close Web Application" library="ResourceKeywords" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181007 10:03:06.340" endtime="20181007 10:03:06.340"></status>
+</kw>
+<status status="PASS" starttime="20181007 10:03:06.340" endtime="20181007 10:03:06.340"></status>
+</kw>
+<tags>
+<tag>Sanity_Test</tag>
+<tag>SC_ID_1</tag>
+</tags>
+<status status="FAIL" starttime="20181007 10:03:06.328" endtime="20181007 10:03:06.340" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-t2" name="Verify User Should Be Able to Create Sub Task">
+<kw name="Open Web Application" library="ResourceKeywords" type="setup">
+<arguments>
+<arg>${AppUrl}</arg>
+<arg>${FfWebBrowser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${webUrl}</arg>
+<arg>browser=${browserName}</arg>
+</arguments>
+<msg timestamp="20181007 10:03:06.343" level="INFO">Opening browser 'firefox' to base url 'https://qa-test.avenuecode.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181007 10:03:06.349" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181007 10:03:06.349" endtime="20181007 10:03:06.349"></status>
+</kw>
+<msg timestamp="20181007 10:03:06.353" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20181007 10:03:06.343" endtime="20181007 10:03:06.353"></status>
+</kw>
+<status status="FAIL" starttime="20181007 10:03:06.343" endtime="20181007 10:03:06.353"></status>
+</kw>
+<kw name="Close Web Application" library="ResourceKeywords" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181007 10:03:06.353" endtime="20181007 10:03:06.353"></status>
+</kw>
+<status status="PASS" starttime="20181007 10:03:06.353" endtime="20181007 10:03:06.353"></status>
+</kw>
+<tags>
+<tag>Sanity_Test</tag>
+<tag>SC_ID_2</tag>
+</tags>
+<status status="FAIL" starttime="20181007 10:03:06.343" endtime="20181007 10:03:06.353" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-t3" name="User Should Not Be able Create Task with less than 3 character">
+<kw name="Open Web Application" library="ResourceKeywords" type="setup">
+<arguments>
+<arg>${AppUrl}</arg>
+<arg>${FfWebBrowser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${webUrl}</arg>
+<arg>browser=${browserName}</arg>
+</arguments>
+<msg timestamp="20181007 10:03:06.357" level="INFO">Opening browser 'firefox' to base url 'https://qa-test.avenuecode.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181007 10:03:06.357" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181007 10:03:06.357" endtime="20181007 10:03:06.357"></status>
+</kw>
+<msg timestamp="20181007 10:03:06.361" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20181007 10:03:06.357" endtime="20181007 10:03:06.361"></status>
+</kw>
+<status status="FAIL" starttime="20181007 10:03:06.353" endtime="20181007 10:03:06.361"></status>
+</kw>
+<kw name="Close Web Application" library="ResourceKeywords" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181007 10:03:06.361" endtime="20181007 10:03:06.361"></status>
+</kw>
+<status status="PASS" starttime="20181007 10:03:06.361" endtime="20181007 10:03:06.361"></status>
+</kw>
+<tags>
+<tag>Sanity_Test</tag>
+<tag>SC_ID_3</tag>
+</tags>
+<status status="FAIL" starttime="20181007 10:03:06.353" endtime="20181007 10:03:06.361" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-t4" name="Verify User Should Not Be Able to Sign Up using Special Character into Name and Email String">
+<kw name="Open Web Application" library="ResourceKeywords" type="setup">
+<arguments>
+<arg>${AppUrl}</arg>
+<arg>${FfWebBrowser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${webUrl}</arg>
+<arg>browser=${browserName}</arg>
+</arguments>
+<msg timestamp="20181007 10:03:06.365" level="INFO">Opening browser 'firefox' to base url 'https://qa-test.avenuecode.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181007 10:03:06.369" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181007 10:03:06.369" endtime="20181007 10:03:06.369"></status>
+</kw>
+<msg timestamp="20181007 10:03:06.369" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20181007 10:03:06.365" endtime="20181007 10:03:06.369"></status>
+</kw>
+<status status="FAIL" starttime="20181007 10:03:06.365" endtime="20181007 10:03:06.369"></status>
+</kw>
+<kw name="Close Web Application" library="ResourceKeywords" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181007 10:03:06.369" endtime="20181007 10:03:06.369"></status>
+</kw>
+<status status="PASS" starttime="20181007 10:03:06.369" endtime="20181007 10:03:06.369"></status>
+</kw>
+<tags>
+<tag>Sanity_Test</tag>
+<tag>SC_ID_4</tag>
+</tags>
+<status status="FAIL" starttime="20181007 10:03:06.361" endtime="20181007 10:03:06.369" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-t5" name="User Should Not Be Able To Create Two Task with same Name">
+<kw name="Open Web Application" library="ResourceKeywords" type="setup">
+<arguments>
+<arg>${AppUrl}</arg>
+<arg>${FfWebBrowser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${webUrl}</arg>
+<arg>browser=${browserName}</arg>
+</arguments>
+<msg timestamp="20181007 10:03:06.373" level="INFO">Opening browser 'firefox' to base url 'https://qa-test.avenuecode.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181007 10:03:06.377" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181007 10:03:06.377" endtime="20181007 10:03:06.377"></status>
+</kw>
+<msg timestamp="20181007 10:03:06.377" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20181007 10:03:06.373" endtime="20181007 10:03:06.377"></status>
+</kw>
+<status status="FAIL" starttime="20181007 10:03:06.373" endtime="20181007 10:03:06.377"></status>
+</kw>
+<kw name="Close Web Application" library="ResourceKeywords" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181007 10:03:06.377" endtime="20181007 10:03:06.377"></status>
+</kw>
+<status status="PASS" starttime="20181007 10:03:06.377" endtime="20181007 10:03:06.377"></status>
+</kw>
+<tags>
+<tag>Sanity_Test</tag>
+<tag>SC_ID_5</tag>
+</tags>
+<status status="FAIL" starttime="20181007 10:03:06.373" endtime="20181007 10:03:06.381" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-t6" name="User Should Not Be Able To Add Task Name From Sub Task Window">
+<kw name="Open Web Application" library="ResourceKeywords" type="setup">
+<arguments>
+<arg>${AppUrl}</arg>
+<arg>${FfWebBrowser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${webUrl}</arg>
+<arg>browser=${browserName}</arg>
+</arguments>
+<msg timestamp="20181007 10:03:06.381" level="INFO">Opening browser 'firefox' to base url 'https://qa-test.avenuecode.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181007 10:03:06.385" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181007 10:03:06.385" endtime="20181007 10:03:06.385"></status>
+</kw>
+<msg timestamp="20181007 10:03:06.385" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20181007 10:03:06.381" endtime="20181007 10:03:06.385"></status>
+</kw>
+<status status="FAIL" starttime="20181007 10:03:06.381" endtime="20181007 10:03:06.389"></status>
+</kw>
+<kw name="Close Web Application" library="ResourceKeywords" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181007 10:03:06.389" endtime="20181007 10:03:06.389"></status>
+</kw>
+<status status="PASS" starttime="20181007 10:03:06.389" endtime="20181007 10:03:06.389"></status>
+</kw>
+<tags>
+<tag>Sanity_Test</tag>
+<tag>SC_ID_6</tag>
+</tags>
+<status status="FAIL" starttime="20181007 10:03:06.381" endtime="20181007 10:03:06.389" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-t7" name="User Should Not Be Able to Create Subtask Without Entering Task Description And Due Date">
+<kw name="Open Web Application" library="ResourceKeywords" type="setup">
+<arguments>
+<arg>${AppUrl}</arg>
+<arg>${FfWebBrowser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${webUrl}</arg>
+<arg>browser=${browserName}</arg>
+</arguments>
+<msg timestamp="20181007 10:03:06.393" level="INFO">Opening browser 'firefox' to base url 'https://qa-test.avenuecode.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181007 10:03:06.393" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181007 10:03:06.393" endtime="20181007 10:03:06.393"></status>
+</kw>
+<msg timestamp="20181007 10:03:06.397" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20181007 10:03:06.393" endtime="20181007 10:03:06.397"></status>
+</kw>
+<status status="FAIL" starttime="20181007 10:03:06.389" endtime="20181007 10:03:06.397"></status>
+</kw>
+<kw name="Close Web Application" library="ResourceKeywords" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181007 10:03:06.397" endtime="20181007 10:03:06.397"></status>
+</kw>
+<status status="PASS" starttime="20181007 10:03:06.397" endtime="20181007 10:03:06.397"></status>
+</kw>
+<tags>
+<tag>Sanity_Test</tag>
+<tag>SC_ID_7</tag>
+</tags>
+<status status="FAIL" starttime="20181007 10:03:06.389" endtime="20181007 10:03:06.397" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<test id="s1-t8" name="User Should Not Be Able To Create Sub Task With More Than 250 characters">
+<kw name="Open Web Application" library="ResourceKeywords" type="setup">
+<arguments>
+<arg>${AppUrl}</arg>
+<arg>${FfWebBrowser}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${webUrl}</arg>
+<arg>browser=${browserName}</arg>
+</arguments>
+<msg timestamp="20181007 10:03:06.401" level="INFO">Opening browser 'firefox' to base url 'https://qa-test.avenuecode.com/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181007 10:03:06.405" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20181007 10:03:06.405" endtime="20181007 10:03:06.405"></status>
+</kw>
+<msg timestamp="20181007 10:03:06.405" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20181007 10:03:06.401" endtime="20181007 10:03:06.405"></status>
+</kw>
+<status status="FAIL" starttime="20181007 10:03:06.401" endtime="20181007 10:03:06.405"></status>
+</kw>
+<kw name="Close Web Application" library="ResourceKeywords" type="teardown">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181007 10:03:06.405" endtime="20181007 10:03:06.405"></status>
+</kw>
+<status status="PASS" starttime="20181007 10:03:06.405" endtime="20181007 10:03:06.405"></status>
+</kw>
+<tags>
+<tag>Sanity_Test</tag>
+<tag>SC_ID_8</tag>
+</tags>
+<status status="FAIL" starttime="20181007 10:03:06.401" endtime="20181007 10:03:06.409" critical="yes">Setup failed:
+WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<status status="FAIL" starttime="20181007 10:03:06.166" endtime="20181007 10:03:06.409"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8">Critical Tests</stat>
+<stat pass="0" fail="8">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="8">Sanity_Test</stat>
+<stat pass="0" fail="1">SC_ID_1</stat>
+<stat pass="0" fail="1">SC_ID_2</stat>
+<stat pass="0" fail="1">SC_ID_3</stat>
+<stat pass="0" fail="1">SC_ID_4</stat>
+<stat pass="0" fail="1">SC_ID_5</stat>
+<stat pass="0" fail="1">SC_ID_6</stat>
+<stat pass="0" fail="1">SC_ID_7</stat>
+<stat pass="0" fail="1">SC_ID_8</stat>
+</tag>
+<suite>
+<stat pass="0" fail="8" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
